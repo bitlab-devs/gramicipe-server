@@ -38,4 +38,4 @@ Happy coding!
 
 ---
 
-[Link to Frontend Repository](<link-to-frontend-repo>)
+[Link to Frontend Repository](https://github.com/bitlab-devs/gramecipe-client)
