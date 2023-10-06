@@ -21,7 +21,7 @@ Welcome to the backend/server repository of Gramicipe! This is the server-side o
 
 Follow these steps to set up and run the backend locally on your development machine:
 
-1. Clone this repository: `git clone <backend-repo-url>`
+1. Clone this repository: `git clone https://github.com/bitlab-devs/gramicipe-server`
 2. Navigate to the project directory: `cd Gramicipe-server`
 3. Install dependencies: `npm install`
 4. Start the server: `npm run dev`
