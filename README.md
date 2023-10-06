@@ -38,4 +38,4 @@ Happy coding!
 
 ---
 
-[Preview the deployment on](https://gramicipe-server.onrender.com/)
+Preview the deployment on (https://gramicipe-server.onrender.com/)
