@@ -9,6 +9,8 @@ const app = express()
 const path = require("path")
 const cors = require("cors")
 const corsOptions = require('./config/corsOptions')
+const { logger, logEvents } = require('./middleware/logger')
+const errorHandler = require('./middleware/errorHandler')
 
 const PORT = process.env.PORT || 3500
 
@@ -19,6 +21,8 @@ app.use(cors(corsOptions))
 app.use(express.static('public'))
 
 app.use(express.json())
+
+app.use(errorHandler)
 
 app.use('/', require('./routes/root'))
 
@@ -39,4 +43,9 @@ app.all('*', (req, res) => {
 mongoose.connection.once('open', () => {
     console.log('Connected to the Database')
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+})
+
+mongoose.connection.on('error', err => {
+    console.log(err)
+    logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, 'mongoErrLog.log')
 })
