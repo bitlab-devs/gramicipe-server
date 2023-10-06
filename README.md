@@ -26,10 +26,6 @@ Follow these steps to set up and run the backend locally on your development mac
 3. Install dependencies: `npm install`
 4. Start the server: `npm run dev`
 
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to the project, please follow our [Contributing Guidelines](CONTRIBUTING.md).
-
 ## Acknowledgments
 
 Special thanks to all the contributors and team members on this project!
